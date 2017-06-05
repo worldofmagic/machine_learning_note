@@ -28,6 +28,34 @@ At each iteration j, one should simultaneously update the parametersθ1,θ2,...,
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/yr-D1aDMEeai9RKvXdDYag_627e5ab52d5ff941c0fcc741c2b162a0_Screenshot-2016-11-02-00.19.56.png?expiry=1496793600000&hmac=wJ_VPTTPmgE2QGp2q_geYE-Adk2ybAySG11CYs1njUE)
 
+# Gradient Descent Intuition
+
+In this video we explored the scenario where we used one parameterθ1and plotted its cost function to implement a gradient descent. Our formula for a single parameter was :
+
+Repeat until convergence:
+
+| θ1:=θ1−αddθ1J\(θ1\) |
+| :--- |
+
+
+Regardless of the slope's sign forddθ1J\(θ1\),θ1eventually converges to its minimum value. The following graph shows that when the slope is negative, the value ofθ1increases and when it is positive, the value ofθ1decreases.
+
+![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/SMSIxKGUEeav5QpTGIv-Pg_ad3404010579ac16068105cfdc8e950a_Screenshot-2016-11-03-00.05.06.png?expiry=1496793600000&hmac=klUfem3vYb5I2mYm8gDwiiWl9nQbWk9j1uxD2HLprT0)
+
+On a side note, we should adjust our parameterαto ensure that the gradient descent algorithm converges in a reasonable time. Failure to converge or too much time to obtain the minimum value imply that our step size is wrong.
+
+![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/UJpiD6GWEeai9RKvXdDYag_3c3ad6625a2a4ec8456f421a2f4daf2e_Screenshot-2016-11-03-00.05.27.png?expiry=1496793600000&hmac=1tM4m2p3ig7lroH2sXP8XvC7y7T_qz1uyaqfdxDBnQ0)
+
+### How does gradient descent converge with a fixed step sizeα?
+
+The intuition behind the convergence is thatddθ1J\(θ1\)approaches 0 as we approach the bottom of our convex function. At the minimum, the derivative will always be 0 and thus we get:
+
+| θ1:=θ1−α∗0 |
+| :--- |
+
+
+
+
   
 
 
