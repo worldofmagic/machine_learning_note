@@ -56,6 +56,5 @@ The intuition behind the convergence is thatddθ1J\(θ1\)approaches 0 as we appr
 
 
 
-  
-
+![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/RDcJ-KGXEeaVChLw2Vaaug_cb782d34d272321e88f202940c36afe9_Screenshot-2016-11-03-00.06.00.png?expiry=1496793600000&hmac=qY0E7qDGYKLjpVmJbRCPMGMG8lF0cFzcx20ENpQGKQg)
 
