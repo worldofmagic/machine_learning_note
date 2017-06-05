@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
-* [Introduction for Supervised Learning](chapter1.md)
-* [Introduction for Unsupervised Learning](introduction-for-unsupervised-learning.md)
+* [Summary](README.md)
+* [Introduction](Chapter1/0x1-Introduction.md)
+* [Model Representation](Chapter1/0x2-Model Representation.md)
 
