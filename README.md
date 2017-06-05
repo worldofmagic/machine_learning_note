@@ -1,3 +1,11 @@
-# My Awesome Book
+# What is Machine Learning?
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+## Machine Learning Algorithms:
+
+* Supervised learning
+* Unsupervised learning
+
+Others: Reinforcement learning, recommender systems.
+
+
+
