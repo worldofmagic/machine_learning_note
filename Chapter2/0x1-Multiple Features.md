@@ -16,7 +16,7 @@ $$x^{(i)}$$** = the column vector of all the feature inputs of the **$$i^{th}$$*
 
 The multivariable form of the hypothesis function accommodating these multiple features is as follows:
 
-$$h_\theta(x)$$ = $$\theta_0$$+$$ \theta_{1}x_{1}$$+ $$ \theta_{2}x_{2}$$+ $$\theta_{3}x_{3}$$+...+ $$ \theta_{n}x_{n}$$
+$$h_{\theta}(x)$$ = $$[\theta_{0} \quad \theta_{1} \quad ... \theta_{n} \quad]$$$$[[x{0}] [x{1}][...][x{n}]]$$ = $$ \theta^{T}x$$
 
 In order to develop intuition about this function, we can think about $$\theta_{0}$$ as the basic price of a house, $$\theta_{1}$$ as the price per square meter, $$\theta_{2}$$ as the price per floor, etc. $$x_{1}$$ will be the number of square meters in the house, $$x_{2}$$ the number of floors, etc.
 
@@ -26,13 +26,13 @@ $$h_{\theta}(x)$$ = \[ \[ $$\theta_{0}$$+$$\theta_{1}$$+...+$$\theta_{n}$$ \] \]
 
 This is a vectorization of our hypothesis function for one training example; see the lessons on vectorization to learn more.
 
-Remark: Note that for convenience reasons in this course we assumex\(i\)0=1 for \(i∈1,…,m\). This allows us to do matrix operations with theta and x. Hence making the two vectors 'θ' andx\(i\)match each other element-wise \(that is, have the same number of elements: n+1\).\]
+Remark: Note that for convenience reasons in this course we assume $$x_{0}^{i}=1$$ for \($$i \in 1,...,m$$\). This allows us to do matrix operations with theta and x. Hence making the two vectors '$$\theta$$' and $$x^{(i)}$$ match each other element-wise \(that is, have the same number of elements: n+1\).\]
 
-The following example shows us the reason behind settingx\(i\)0=1:
+The following example shows us the reason behind setting $$x_{0}^{(i)}=1$$:
 
-X=⎡⎣x\(1\)0x\(1\)1x\(2\)0x\(2\)1x\(3\)0x\(3\)1⎤⎦,θ=\[θ0θ1\]
+$$ X = [ [ x_{0}^{(1)} , x_{0}^{(2)},x_{0}^{(3)} ],[ x_{1}^{(1)} , x_{1}^{(2)},x_{1}^{(3)} ] ]$$, $$ \theta = [ [ \theta_{0} ], [\theta_{1}] ]$$
 
 As a result, you can calculate the hypothesis as a vector with:
 
-hθ\(X\)=θTX
+$$ h_{\theta}(X) = \theta^{T}X$$
 
