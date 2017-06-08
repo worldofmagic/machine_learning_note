@@ -40,5 +40,7 @@ Whereμiis the **average **of all the values for feature \(i\) andsiis the range
 
 Note that dividing by the range, or dividing by the standard deviation, give different results. The quizzes in this course use range - the programming exercises use standard deviation.
 
-For example, ifxirepresents housing prices with a range of 100 to 2000 and a mean value of 1000, then,xi:=price−10001900.
+For example, ifxirepresents housing prices with a range of 100 to 2000 and a mean value of 1000, then,
+
+$$ x_{i}$$ $$:=$$ $$(price-1000)/1900$$.
 
