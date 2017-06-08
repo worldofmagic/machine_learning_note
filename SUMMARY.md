@@ -11,4 +11,5 @@
 ## Multivariate Linear Regression
 
 * [0x1 Multiple Features](Chapter2/0x1-Multiple Features.md)
+* [0x2 Gradient Descent for Multiple Variables](Chapter2/gradient-descent-for-multiple-variables.md)
 
