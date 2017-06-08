@@ -6,7 +6,7 @@ Linear regression with multiple variables is also known as "multivariate linear 
 
 We now introduce notation for equations where we can have any number of input variables.
 
-$$ x ^{\(i\)}\_j$$
+$$ x ^{\(i\)}\_j$$$$ x\_j^{\(i\)}&&
 
 The multivariable form of the hypothesis function accommodating these multiple features is as follows:
 
