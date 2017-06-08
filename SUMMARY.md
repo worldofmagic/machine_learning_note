@@ -10,3 +10,5 @@
 
 ## Multivariate Linear Regression
 
+* [0x1 Multiple Features](Chapter2/0x1-Multiple Features.md)
+

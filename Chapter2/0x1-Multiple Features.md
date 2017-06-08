@@ -6,7 +6,7 @@ Linear regression with multiple variables is also known as "multivariate linear 
 
 We now introduce notation for equations where we can have any number of input variables.
 
-$$ x ^{\(i\)}\_j$$$$ x_j^{(i)}$$** = value of feature **$$j$$** in the **$$i^{th}$$** traning example**
+$$ x_j^{(i)}$$** = value of feature **$$j$$** in the **$$i^{th}$$** traning example**
 
 $$x^{(i)}$$** = the column vector of all the feature inputs of the **$$i^{th}$$** training example**
 
