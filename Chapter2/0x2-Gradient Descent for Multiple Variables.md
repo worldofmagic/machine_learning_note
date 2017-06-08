@@ -40,13 +40,11 @@ For example, ifxirepresents housing prices with a range of 100 to 2000 and a mea
 
 $$ x_{i}$$ $$:=$$ $$(price-1000)/1900$$.
 
-
-
 ## Gradient Descent in Practice II - Learning Rate
 
 **Note:**\[5:20 - the x -axis label in the right graph should beθrather than No. of iterations \]
 
-**Debugging gradient descent.**Make a plot with_number of iterations_on the x-axis. Now plot the cost function, J\(θ\) over the number of iterations of gradient descent. If J\(θ\) ever increases, then you probably need to decrease α.
+**Debugging gradient descent.**Make a plot with\_number of iterations\_on the x-axis. Now plot the cost function, J\(θ\) over the number of iterations of gradient descent. If J\(θ\) ever increases, then you probably need to decrease α.
 
 **Automatic convergence test.**Declare convergence if J\(θ\) decreases by less than E in one iteration, where E is some small value such as10−3. However in practice it's difficult to choose this threshold value.
 
@@ -61,4 +59,26 @@ To summarize:
 Ifαis too small: slow convergence.
 
 Ifαis too large: ￼may not decrease on every iteration and thus may not converge.
+
+## Features and Polynomial Regression
+
+We can improve our features and the form of our hypothesis function in a couple different ways.
+
+We can **combine **multiple features into one. For example, we can combine $$x_{1}$$and $$x_{2}$$ into a new feature $$x_{3} $$ by taking $$x_{1}* x_{2}$$.
+
+### **Polynomial Regression**
+
+Our hypothesis function need not be linear \(a straight line\) if that does not fit the data well.
+
+We can **change the behavior or curve **of our hypothesis function by making it a quadratic, cubic or square root function \(or any other form\).
+
+For example, if our hypothesis function is $$h{\theta}(x) = \theta_{0}+\theta_{1}x_{1}$$ then we can create additional features based onx1, to get the quadratic functionhθ\(x\)=θ0+θ1x1+θ2x21or the cubic functionhθ\(x\)=θ0+θ1x1+θ2x21+θ3x31
+
+In the cubic version, we have created new featuresx2andx3wherex2=x21andx3=x31.
+
+To make it a square root function, we could do:hθ\(x\)=θ0+θ1x1+θ2x1−−√
+
+One important thing to keep in mind is, if you choose your features this way then feature scaling becomes very important.
+
+eg. ifx1has range 1 - 1000 then range ofx21becomes 1 - 1000000 and that ofx31becomes 1 - 1000000000
 
