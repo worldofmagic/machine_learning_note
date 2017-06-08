@@ -1,6 +1,6 @@
 # Multiple Features
 
-**Note:**\[7:25 -θTis a 1 by \(n+1\) matrix and not an \(n+1\) by 1 matrix\]
+**Note:**\[7:25 - $$\theta^{T}$$ is a 1 by \(n+1\) matrix and not an \(n+1\) by 1 matrix\]
 
 Linear regression with multiple variables is also known as "multivariate linear regression".
 
