@@ -12,11 +12,7 @@ The following image compares gradient descent with one variable to gradient desc
 
 ![](/assets/GDMV 3.png)
 
-## 
-
-## Practice I
-
-# Gradient Descent in Practice I - Feature Scaling
+## Gradient Descent in Practice I - Feature Scaling
 
 **Note:**\[6:20 - The average size of a house is 1000 but 100 is accidentally written instead\]
 
@@ -43,4 +39,26 @@ Note that dividing by the range, or dividing by the standard deviation, give dif
 For example, ifxirepresents housing prices with a range of 100 to 2000 and a mean value of 1000, then,
 
 $$ x_{i}$$ $$:=$$ $$(price-1000)/1900$$.
+
+
+
+## Gradient Descent in Practice II - Learning Rate
+
+**Note:**\[5:20 - the x -axis label in the right graph should beθrather than No. of iterations \]
+
+**Debugging gradient descent.**Make a plot with_number of iterations_on the x-axis. Now plot the cost function, J\(θ\) over the number of iterations of gradient descent. If J\(θ\) ever increases, then you probably need to decrease α.
+
+**Automatic convergence test.**Declare convergence if J\(θ\) decreases by less than E in one iteration, where E is some small value such as10−3. However in practice it's difficult to choose this threshold value.
+
+![](/assets/GDMV PII.png)
+
+It has been proven that if learning rate α is sufficiently small, then J\(θ\) will decrease on every iteration.
+
+![](/assets/GDMV PII-2.png)
+
+To summarize:
+
+Ifαis too small: slow convergence.
+
+Ifαis too large: ￼may not decrease on every iteration and thus may not converge.
 
