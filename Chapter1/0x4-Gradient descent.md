@@ -6,7 +6,7 @@ Imagine that we graph our hypothesis function based on its fieldsθ0andθ1\(actu
 
 We putθ0on the x axis andθ1on the y axis, with the cost function on the vertical z axis. The points on our graph will be the result of the cost function using our hypothesis with those specific theta parameters. The graph below depicts such a setup.
 
-![](/assets/Gardient descent 1.png)
+![](/assets/Gradient descent 1.png)
 
 We will know that we have succeeded when our cost function is at the very bottom of the pits in our graph, i.e. when its value is the minimum. The red arrows show the minimum points in the graph.
 
@@ -18,7 +18,7 @@ The gradient descent algorithm is:
 
 repeat until convergence:
 
-θj:=θj−α∂∂θjJ\(θ0,θ1\)
+θj:=θj−α \* ∂ J\(θ0,θ1\)/∂θj
 
 where
 
@@ -26,7 +26,7 @@ j=0,1 represents the feature index number.
 
 At each iteration j, one should simultaneously update the parametersθ1,θ2,...,θn. Updating a specific parameter prior to calculating another one on thej\(th\)iteration would yield to a wrong implementation.
 
-![](/assets/Gardient descent 2.png)
+![](/assets/Gradient descent 2.png)
 
 # Gradient Descent Intuition
 
@@ -40,11 +40,11 @@ Repeat until convergence:
 
 Regardless of the slope's sign forddθ1J\(θ1\),θ1eventually converges to its minimum value. The following graph shows that when the slope is negative, the value ofθ1increases and when it is positive, the value ofθ1decreases.
 
-![](/assets/Gardient descent intuition 1.png)
+![](/assets/Gradient descent intuition 1.png)
 
 On a side note, we should adjust our parameterαto ensure that the gradient descent algorithm converges in a reasonable time. Failure to converge or too much time to obtain the minimum value imply that our step size is wrong.
 
-![](/assets/Gardient descent intuition 2.png)
+![](/assets/Gradient descent intuition 2.png)
 
 ### How does gradient descent converge with a fixed step sizeα?
 
@@ -54,7 +54,7 @@ The intuition behind the convergence is thatddθ1J\(θ1\)approaches 0 as we appr
 | :--- |
 
 
-![](/assets/Gardient descent intuituin 3.png)
+![](/assets/Gradient descent intuituin 3.png)
 
 # Gradient Descent For Linear Regression
 
@@ -70,13 +70,13 @@ where m is the size of the training set,θ0a constant that will be changing simu
 
 Note that we have separated out the two cases forθjinto separate equations forθ0andθ1; and that forθ1we are multiplyingxiat the end due to the derivative. The following is a derivation of∂∂θjJ\(θ\)for a single example :
 
-![](/assets/Gradient.png)
+![](/assets/Gradient descent for linear regression 1.png)
 
 The point of all this is that if we start with a guess for our hypothesis and then repeatedly apply these gradient descent equations, our hypothesis will become more and more accurate.
 
 So, this is simply gradient descent on the original cost function J. This method looks at every example in the entire training set on every step, and is called**batch gradient descent**. Note that, while gradient descent can be susceptible to local minima in general, the optimization problem we have posed here for linear regression has only one global, and no other local, optima; thus gradient descent always converges \(assuming the learning rate α is not too large\) to the global minimum. Indeed, J is a convex quadratic function. Here is an example of gradient descent as it is run to minimize a quadratic function.
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/xAQBlqaaEeawbAp5ByfpEg_24e9420f16fdd758ccb7097788f879e7_Screenshot-2016-11-09-08.36.49.png?expiry=1496793600000&hmac=O13JIlbcHrKhqh4TASCi4iDr0XJekqbu1EQdCyqXIFM)
+![](/assets/Gradient descent for linear regression 2.png)
 
 The ellipses shown above are the contours of a quadratic function. Also shown is the trajectory taken by gradient descent, which was initialized at \(48,30\). The x’s in the figure \(joined by straight lines\) mark the successive values of θ that gradient descent went through as it converged to its minimum.
 
