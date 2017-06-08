@@ -6,7 +6,7 @@ Imagine that we graph our hypothesis function based on its fieldsθ0andθ1\(actu
 
 We putθ0on the x axis andθ1on the y axis, with the cost function on the vertical z axis. The points on our graph will be the result of the cost function using our hypothesis with those specific theta parameters. The graph below depicts such a setup.
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bn9SyaDIEeav5QpTGIv-Pg_0d06dca3d225f3de8b5a4a7e92254153_Screenshot-2016-11-01-23.48.26.png?expiry=1496793600000&hmac=DavdOmNq35KaxHDgkhLDP8kEy2f26wvKmMg1XQ52me4)
+![](/assets/Gardient descent 1.png)
 
 We will know that we have succeeded when our cost function is at the very bottom of the pits in our graph, i.e. when its value is the minimum. The red arrows show the minimum points in the graph.
 
@@ -26,7 +26,7 @@ j=0,1 represents the feature index number.
 
 At each iteration j, one should simultaneously update the parametersθ1,θ2,...,θn. Updating a specific parameter prior to calculating another one on thej\(th\)iteration would yield to a wrong implementation.
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/yr-D1aDMEeai9RKvXdDYag_627e5ab52d5ff941c0fcc741c2b162a0_Screenshot-2016-11-02-00.19.56.png?expiry=1496793600000&hmac=wJ_VPTTPmgE2QGp2q_geYE-Adk2ybAySG11CYs1njUE)
+![](/assets/Gardient descent 2.png)
 
 # Gradient Descent Intuition
 
@@ -40,11 +40,11 @@ Repeat until convergence:
 
 Regardless of the slope's sign forddθ1J\(θ1\),θ1eventually converges to its minimum value. The following graph shows that when the slope is negative, the value ofθ1increases and when it is positive, the value ofθ1decreases.
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/SMSIxKGUEeav5QpTGIv-Pg_ad3404010579ac16068105cfdc8e950a_Screenshot-2016-11-03-00.05.06.png?expiry=1496793600000&hmac=klUfem3vYb5I2mYm8gDwiiWl9nQbWk9j1uxD2HLprT0)
+![](/assets/Gardient descent intuition 1.png)
 
 On a side note, we should adjust our parameterαto ensure that the gradient descent algorithm converges in a reasonable time. Failure to converge or too much time to obtain the minimum value imply that our step size is wrong.
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/UJpiD6GWEeai9RKvXdDYag_3c3ad6625a2a4ec8456f421a2f4daf2e_Screenshot-2016-11-03-00.05.27.png?expiry=1496793600000&hmac=1tM4m2p3ig7lroH2sXP8XvC7y7T_qz1uyaqfdxDBnQ0)
+![](/assets/Gardient descent intuition 2.png)
 
 ### How does gradient descent converge with a fixed step sizeα?
 
@@ -54,7 +54,7 @@ The intuition behind the convergence is thatddθ1J\(θ1\)approaches 0 as we appr
 | :--- |
 
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/RDcJ-KGXEeaVChLw2Vaaug_cb782d34d272321e88f202940c36afe9_Screenshot-2016-11-03-00.06.00.png?expiry=1496793600000&hmac=qY0E7qDGYKLjpVmJbRCPMGMG8lF0cFzcx20ENpQGKQg)
+![](/assets/Gardient descent intuituin 3.png)
 
 # Gradient Descent For Linear Regression
 
@@ -62,7 +62,7 @@ The intuition behind the convergence is thatddθ1J\(θ1\)approaches 0 as we appr
 
 When specifically applied to the case of linear regression, a new form of the gradient descent equation can be derived. We can substitute our actual cost function and our actual hypothesis function and modify the equation to :
 
-| repeat until convergence: {θ0:=θ1:=}θ0−α1m∑i=1m\(hθ\(xi\)−yi\)θ1−α1m∑i=1m\(\(hθ\(xi\)−yi\)xi\) |
+| repeat until convergence: {θ0:=θ1:=}θ0−α1m∑i=1m\(hθ\(xi\)−yi\)θ1−α1m∑i=1m\(\(hθ\(xi\)−yi\)xi\) |
 | :--- |
 
 
@@ -70,7 +70,7 @@ where m is the size of the training set,θ0a constant that will be changing simu
 
 Note that we have separated out the two cases forθjinto separate equations forθ0andθ1; and that forθ1we are multiplyingxiat the end due to the derivative. The following is a derivation of∂∂θjJ\(θ\)for a single example :
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/QFpooaaaEea7TQ6MHcgMPA_cc3c276df7991b1072b2afb142a78da1_Screenshot-2016-11-09-08.30.54.png?expiry=1496793600000&hmac=vuFXIlC9RQkvaX1LHghJ6TcbDpfP0A2iCmldJAFOQxo)
+![](/assets/Gradient.png)
 
 The point of all this is that if we start with a guess for our hypothesis and then repeatedly apply these gradient descent equations, our hypothesis will become more and more accurate.
 
