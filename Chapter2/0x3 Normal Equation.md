@@ -10,5 +10,7 @@ There is **no need **to do feature scaling with the normal equation.
 
 The following is a comparison of gradient descent and the normal equation:
 
-\| Gradient Descent \| Normal Equation \|
+![](/assets/Normal Equation 2.png)
+
+With the normal equation, computing the inversion has complexity $$ O(n^3) $$. So if we have a very large number of features, the normal equation will be slow. In practice, when n exceeds 10,000 it might be a good time to go from a normal solution to an iterative process.
 
