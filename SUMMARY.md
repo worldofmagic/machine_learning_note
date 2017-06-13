@@ -12,4 +12,5 @@
 
 * [0x1 Multiple Features](Chapter2/0x1-Multiple Features.md)
 * [0x2 Gradient Descent for Multiple Variables](Chapter2/0x2-Gradient Descent for Multiple Variables.md)
+* [0x3 Normal Equation](Chapter2/0x3 Normal Equation.md)
 
